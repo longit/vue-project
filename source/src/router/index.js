@@ -14,9 +14,19 @@ const routes = [
   },
   {
     path: '/product/create',
-    name: '/product/create', 
+    name: '/product.create', 
     component: () => import('../views/products/Form.vue')
-  }
+  },
+  {
+    path: '/user',
+    name: 'user.list', 
+    component: () => import('../views/users/List.vue')
+  },
+  {
+    path: '/user/create',
+    name: '/user.create', 
+    component: () => import('../views/users/Form.vue')
+  },
 ]
 
 const router = createRouter({

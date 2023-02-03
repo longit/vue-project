@@ -1,9 +1,9 @@
 <template>
-  <div class="product-list">
+<div class="product-list">
     <div class="container">
         <div class="pb-md-4 px-auto">
-            <h3 class="align-items-center justify-content-center">Products Management</h3>
-            <router-link to="/product/create">Add new </router-link>
+            <h3 class="align-items-center justify-content-center">User Management</h3> 
+            <router-link to="/user/create">Add new </router-link>
         </div>
       <table class="table table-bordered">
         <thead>
@@ -35,5 +35,5 @@
         </tbody>
       </table>
     </div>
-  </div>
+</div>
 </template>
