@@ -84,8 +84,16 @@ export default {
     },
     
     save() {
-        this.validate() 
+        if (this.validate()) {
+            this.$request.post('http://localhost:8000/api/products', this.product).then(res => {
+                if (res.data.success) {
+                    this.$router.push({ name: 'product.list'})
+                    return
+                }
+                alert('Something went wrong')
+            }) 
+        }
     }
-  },
+  }
 }
 </script>
